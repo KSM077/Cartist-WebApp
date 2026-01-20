@@ -1,0 +1,9 @@
+.car-detail {
+    flex: 0 0 320px;
+    background: #111;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    position: sticky;
+    top: 2rem;
+}

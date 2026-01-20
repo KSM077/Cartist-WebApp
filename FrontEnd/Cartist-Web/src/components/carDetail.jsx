@@ -1,11 +1,13 @@
-const carDetail = ({ details }) => {
-    return (
-        <div className="car-detail">
-            <h4>{details.description}</h4>
-            <h4>{details.features}</h4>
-        </div>
-    );
+const CarDetail = ({ car, details }) => {
+  return (
+    <div className="car-detail">
+      <h2>{car.name}</h2>
+      <p>{details.description}</p>
+      <p>{details.motor}</p>
+      <p>{details.transmision}</p>
+      <p>{details.speed}</p>
+    </div>
+  );
+};
 
-}
-
-export default carDetail;
+export default CarDetail;
