@@ -8,10 +8,16 @@ const carsDetails = {
     },
 
     2: {
-        description: "es un automóvil superdeportivo biplaza de dos puertas de tijera, con motor central-trasero montado longitudinalmente y de tracción en las cuatro ruedas, producido por el fabricante italiano Lamborghini, subsidiaria del Grupo Volkswagen,de 2011 a 2022.",
+        description: "Es un automóvil superdeportivo biplaza de dos puertas de tijera, con motor central-trasero montado longitudinalmente y de tracción en las cuatro ruedas, producido por el fabricante italiano Lamborghini, subsidiaria del Grupo Volkswagen,de 2011 a 2022.",
         motor: "Motor: V12 de 6.5 litros",
         transmision: "Transmisión: Automática de 7 velocidades",
         speed: "Velocidad máxima: 350 km/h"
+    },
+    3: {
+        description: "El Porsche 911 es un automóvil deportivo de motor trasero y tracción trasera o total, fabricado por el fabricante alemán Porsche AG desde 1964. Es el modelo más emblemático de la marca y uno de los deportivos más reconocidos a nivel mundial.",
+        motor: "Motor: 3.0L H6 biturbo",
+        transmision: "Transmisión: Automática de 8 velocidades",
+        speed: "Velocidad máxima: 320 km/h"
     }
 
 };

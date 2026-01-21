@@ -1,11 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 2rem;
-
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  grid-template-columns: 400px 1fr;
 }
 
 /* LISTA DE AUTOS */
@@ -20,18 +15,4 @@
 }
 
 
-/* DETALLE */
-.details-section {
-  min-width: 0;
-}
 
-
-@media (max-width: 900px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
-
-  .details-section {
-    order: -1;
-  }
-}

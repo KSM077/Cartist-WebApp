@@ -1,9 +1,12 @@
 .car-detail {
-    flex: 0 0 320px;
-    background: #111;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: transparent;
     color: #fff;
     padding: 1.5rem;
     border-radius: 12px;
-    position: sticky;
-    top: 2rem;
+    position: relative;
+    top: 300px;
+    left: 340px;
+    width: 400px;
+    height: 350px;
 }

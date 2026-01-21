@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 }
 
 body {
-  font-family: 'italiana', system-ui, sans-serif;
+  font-family: 'Playfair Display', system-ui, sans-serif;
   background: radial-gradient(circle 550px , #3d499b, #595959);
   color: #fff;
 }

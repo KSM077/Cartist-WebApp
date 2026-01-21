@@ -1,7 +1,7 @@
 const CarDetail = ({ car, details }) => {
   return (
     <div className="car-detail">
-      <h2>{car.name}</h2>
+      <h2>{car.brand} {car.name}</h2>
       <p>{details.description}</p>
       <p>{details.motor}</p>
       <p>{details.transmision}</p>

@@ -3,9 +3,9 @@ const CarCard = ({ car, onSelect }) => {
     <div className="car-card" onClick={onSelect}>
       <img src={car.image} />
         <div className="car-overlay">
-          <h1>{car.name}</h1>
-          <h3>{car.brand}</h3>
-          <p>{car.year}</p>
+          <h1>{car.brand} {car.name}</h1>
+          <h2>{car.price}</h2>
+          <h3>{car.year}</h3>
         </div>
     </div>
   );

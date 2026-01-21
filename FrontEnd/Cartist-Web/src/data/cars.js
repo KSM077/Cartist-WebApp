@@ -1,5 +1,6 @@
 import TsuruIMG from '../assets/cars/tsuru.png';
-import AventadorIMG from '../assets/cars/aventador.png';
+import AventadorIMG from '../assets/cars/aventador.png'
+import P911IMG from '../assets/cars/porsche.png';
 
 const cars = [
     {
@@ -7,20 +8,24 @@ const cars = [
         name: "Tsuru",
         brand: "Nissan", 
         year: 1995,
-        color: "White",
-        type: "Sedan",
         image: TsuruIMG,
-        price: 250.000
+        price: "250k"
     },
     {
         id: 2,
         name: "Aventador",
         brand: "Lamborghini", 
         year: 2014,
-        color: "Black",
-        type: "Sport",
         image: AventadorIMG,
-        price: 500.000
+        price: "500k"
+    },
+    {
+        id: 3,
+        name: "911",
+        brand: "Porsche",
+        year: 2020,
+        image: P911IMG,
+        price: "750k"
     }
 
 ];

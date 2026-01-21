@@ -1,11 +1,10 @@
 /* CONTENEDOR PRINCIPAL */
 .navbar {
-  width: 100%;
-  max-width: 1400px;
-  margin: 1.5rem auto;
-
-  position: sticky;
-  top: 0;
+  width: 1882px;
+  margin: -2px;
+  position: relative;
+  top: -200px;
+  left: 10px;
   z-index: 100;
   color: #ffffff;
   border-radius: 14px;
@@ -14,17 +13,24 @@
 
 /* LOGO */
 .navbar-logo {
+  position: relative;
+  top: 20px;
+  left: -850px;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   cursor: pointer;
 }
 
 /* LADO DERECHO */
 .navbar-right {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  position: relative;
+  top: -18px;
+  left: 1350px;
 }
 
 /* BOTONES */
