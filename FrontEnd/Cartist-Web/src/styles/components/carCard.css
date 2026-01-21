@@ -6,6 +6,7 @@
   margin: 20px;
   width: 400px;
   height: 350px;
+  object-fit: cover;
 }
 
 .car-card img {

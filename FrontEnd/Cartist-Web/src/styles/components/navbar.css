@@ -1,53 +1,103 @@
+/* CONTENEDOR PRINCIPAL */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  margin-top: -750px;
-  padding: 50px;
-  width: 185%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 1.5rem auto;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
+/* LOGO */
 .navbar-logo {
-  font-size: 5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
+/* LADO DERECHO */
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 1.5rem;
 }
 
+/* BOTONES */
 .icon-btn {
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: white;
-  font-size: 1.1rem;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+
+  font-size: 0.9rem;
   cursor: pointer;
+
+  transition: all 0.25s ease;
 }
 
 .icon-btn:hover {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.15);
 }
 
+/* BOTÓN PRINCIPAL */
+.icon-btn.primary {
+  background: white;
+  color: #1f2a30;
+  font-weight: 600;
+}
+
+.icon-btn.primary:hover {
+  background: #e5e5e5;
+}
+
+/* SEARCH */
 .search-box {
   display: flex;
-  position: relative;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  border-radius: 10px;
 }
 
 .search-box input {
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
+  background: transparent;
   border: none;
   outline: none;
+
+  color: white;
+  padding: 0.45rem 0.6rem;
+  width: 160px;
+
+  font-size: 0.9rem;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .search-box button {
-  margin-left: 0.3rem;
-  padding: 0.4rem 0.7rem;
-  border-radius: 6px;
+  background: white;
+  color: #1f2a30;
+
   border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
   cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.search-box button:hover {
+  background: #e5e5e5;
 }

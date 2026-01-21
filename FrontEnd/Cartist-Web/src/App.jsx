@@ -18,8 +18,8 @@ function App() {
     <>
       <Navbar />
 
-      <div className="app">
-        <div className="cars-list">
+      <main className="layout">
+        <section className="cars-section">
           {cars.map(car => (
             <CarCard
               key={car.id}
@@ -27,15 +27,18 @@ function App() {
               onSelect={() => setSelectedCar(car)}
             />
           ))}
-        </div>
+        </section>
 
         {selectedCar && (
-          <CarDetail
-            car={selectedCar}
-            details={carsDetails[selectedCar.id]}
-          />
+          <aside className="details-section">
+            <CarDetail
+              car={selectedCar}
+              details={carsDetails[selectedCar.id]}
+            />
+          </aside>
         )}
-      </div>
+      </main>
+
     </>
 
 
