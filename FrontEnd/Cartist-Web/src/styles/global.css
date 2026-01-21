@@ -9,6 +9,6 @@
 
 body {
   font-family: 'italiana', system-ui, sans-serif;
-  background-color: #595959;
-  color: white;
+  background: radial-gradient(circle 550px , #3d499b, #595959);
+  color: #fff;
 }
