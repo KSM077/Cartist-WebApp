@@ -5,14 +5,16 @@
 
 /* LISTA DE AUTOS */
 .cars-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15rem;
+  position: relative;
   justify-items: center;  
   align-items: start;
   max-width: 1400px;
-  margin: 20px auto;
+  margin: 30px -50px;
 }
 
 
 
+
+.car-column {
+  position: relative;
+}

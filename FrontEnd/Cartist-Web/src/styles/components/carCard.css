@@ -1,13 +1,14 @@
 .car-card {
   position: relative;
-  top: -180px;
+  top: 50px;
   left: 250px;
-  background: transparent;
   border-radius: 12px;
   overflow: hidden;
   margin: 50px;
   width: 400px;
   height: 400px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .car-card img {

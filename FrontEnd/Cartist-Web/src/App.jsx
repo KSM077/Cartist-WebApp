@@ -11,37 +11,36 @@ import './styles/components/carCard.css';
 
 function App() {
 
-  const [selectedCar, setSelectedCar] = useState(null);
+  const [selectedCarId, setSelectedCarId] = useState(null);
 
   return (
-
     <>
       <Navbar />
-
       <main className="layout">
         <section className="cars-section">
-          {cars.map(car => (
-            <CarCard
-              key={car.id}
-              car={car}
-              onSelect={() => setSelectedCar(car)}
-            />
+          {cars.map((car) => (
+            <div key={car.id} className="car-column">
+              <CarCard
+                car={car}
+                onSelect={() =>
+                  setSelectedCarId(
+                    selectedCarId === car.id ? null : car.id
+                  )
+                }
+              />
+
+              {selectedCarId === car.id && (
+                <CarDetail
+                  car={car}
+                  details={carsDetails[car.id]}
+                />
+              )}
+
+            </div>
           ))}
         </section>
-
-        {selectedCar && (
-          <aside className="details-section">
-            <CarDetail
-              car={selectedCar}
-              details={carsDetails[selectedCar.id]}
-            />
-          </aside>
-        )}
       </main>
-
     </>
-
-
 
   );
 }

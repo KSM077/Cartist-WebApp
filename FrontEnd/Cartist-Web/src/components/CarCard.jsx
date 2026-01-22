@@ -1,6 +1,10 @@
 const CarCard = ({ car, onSelect }) => {
   return (
-    <div className="car-card" onClick={onSelect}>
+    <div className="car-card" onClick={onSelect} style={{
+        backgroundImage: `url(${car.bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}>
       <img src={car.image} />
         <div className="car-overlay">
           <h1>{car.brand} {car.name}</h1>
