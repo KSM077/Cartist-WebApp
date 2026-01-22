@@ -3,8 +3,8 @@ import AventadorIMG from '../assets/cars/aventador.png'
 import P911IMG from '../assets/cars/porsche.png';
 
 import pinturaRoja from '../assets/background/Red.png';
-import pinturaNegra from '../assets/background/Black.png';
-import pinturaBlanca from '../assets/background/Whitee.png';
+import pinturaNaranja from '../assets/background/Orange.png';
+import pinturaBlanca from '../assets/background/White.png';
 
 const cars = [
     {
@@ -21,7 +21,7 @@ const cars = [
         name: "Aventador",
         brand: "Lamborghini", 
         year: 2014,
-        bg: pinturaNegra,
+        bg: pinturaNaranja,
         image: AventadorIMG,
         price: "500k"
     },
