@@ -1,6 +1,7 @@
 /* CONTENEDOR PRINCIPAL */
 .navbar {
   width: 1882px;
+  height: 80px;
   margin: -2px;
   position: relative;
   top: 10px;
@@ -29,8 +30,19 @@
   align-items: center;
   gap: 2rem;
   position: relative;
-  top: -18px;
+  top: -45px;
   left: 1350px;
+}
+
+.navbar-center li {
+  display: inline;
+  justify-content: space-between;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  position: relative;
+  top: -13px;
+  right: 25px;
+  color: white;
 }
 
 /* BOTONES */

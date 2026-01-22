@@ -1,47 +1,19 @@
-import { useState } from 'react';
-import cars from './data/cars';
-import carsDetails from './data/carDetail';
-import CarCard from './components/CarCard';
-import CarDetail from './components/carDetail';
-import Navbar from './components/Navbar'
-import './styles/components/carDetail.css';
-import './styles/app.css';
-import './styles/components/carCard.css';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Login from "./pages/Login-Register";
 
 function App() {
-
-  const [selectedCarId, setSelectedCarId] = useState(null);
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <main className="layout">
-        <section className="cars-section">
-          {cars.map((car) => (
-            <div key={car.id} className="car-column">
-              <CarCard
-                car={car}
-                onSelect={() =>
-                  setSelectedCarId(
-                    selectedCarId === car.id ? null : car.id
-                  )
-                }
-              />
-
-              {selectedCarId === car.id && (
-                <CarDetail
-                  car={car}
-                  details={carsDetails[car.id]}
-                />
-              )}
-
-            </div>
-          ))}
-        </section>
-      </main>
-    </>
-
+      <Routes> 
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cars" element></Route>
+        <Route path="/forum" element></Route>
+      </Routes>
+    </Router>
   );
 }
 
